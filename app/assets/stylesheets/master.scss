@@ -1,6 +1,23 @@
 @import "bootstrap";
 
-
 h1 {
-	color: red;
+	padding-top: 200px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: 300;
+	padding-top: 10px;
+}
+
+header {
+	text-align: center;
+	height: 600px;
+	background: url('https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2442&q=80') no-repeat center center fixed;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 }
