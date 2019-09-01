@@ -1,23 +1,67 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
+
+body {
+	font-family: 'Playfair Display', serif;
+	background: #f0f0f0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f0f0f0, #ffffff);  
+	background: linear-gradient(to left, #f0f0f0, #ffffff); 
+}
 
 h1 {
+	color: #595959;
 	padding-top: 200px;
 	font-size: 80px;
 	font-weight: bold;
 }
 
 h2 {
+	font-style: italic;
+	color: #595959;
 	font-size: 40px;
 	font-weight: 300;
 	padding-top: 10px;
 }
 
+h4 {
+	font-size: 30px;
+}
+
+p {
+	font-size: 20px;
+}
+
 header {
 	text-align: center;
-	height: 600px;
-	background: url('https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2442&q=80') no-repeat center center fixed;
+	height: 800px;
+	background: url('https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2442&q=80') no-repeat center center ;
 	-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 }
+
+hr {
+	width: 90%;
+}
+
+div {
+	padding-top: 30px;
+	min-height: 400px;
+}
+
+.center {
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: auto;
+	padding-top: auto; 
+}
+
+.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
