@@ -1,0 +1,23 @@
+<div class="col-10 offset-1">
+    <h1>Community Recipes</h1>
+    <% if user_signed_in?%>
+        <%= link_to 'Add a Recipe', new_recipe_path, class: 'btn btn-outline-secondary' %>
+    <% end %>
+
+    <% @recipes.each do |recipe| %>
+        <div class="desplay-box">
+            <h3><%= recipe.title %></h3><br />
+            <p><i><%= recipe.description %></i></p><br />
+            <% if recipe.user.present? %>
+                <small><%= recipe.user.email %></small>
+            <% end %>
+        </div>
+    <% end %>
+</div>
+
+    <div class="a_pagination">
+		<div class="page_info">
+			<%= page_entries_info @recipes %>
+		</div>
+		<%= will_paginate @recipes, :container => false %>
+	</div>
